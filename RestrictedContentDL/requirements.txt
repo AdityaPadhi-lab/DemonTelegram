@@ -1,0 +1,17 @@
+pyrogram>=2.0.0
+tgcrypto>=1.2.4
+pyleaves>=0.1.5
+python-dotenv>=1.0.0
+psutil>=5.9.6
+pillow>=10.0.0
+uvloop>=0.17.0
+aiohttp>=3.9.0
+speedtest-cli>=2.1.3
+aiofiles>=23.1.0
+rich>=13.3.1
+
+aiohttp
+psutil
+speedtest-cli
+pyrogram
+pyleaves

@@ -1,0 +1,229 @@
+[17-Nov-25 06:45:56 PM - INFO] - <module>() - Line 1038: __main__ - Media Downloader Pro - Bot Starting
+[17-Nov-25 06:46:10 PM - INFO] - handle_download() - Line 434: __main__ - [2025-11-17 18:46:10] Download requested: https://t.me/c/3257354718/12/52
+[17-Nov-25 06:47:20 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:47:20 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:47:31 PM - ERROR] - default_exception_handler() - Line 1785: asyncio - Task exception was never retrieved
+future: <Task finished name='Task-14126' coro=<Session.restart() done, defined at C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py:188> exception=RuntimeError('read() called while another coroutine is already waiting for incoming data')>
+Traceback (most recent call last):
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 123, in start
+    await self.send(raw.functions.Ping(ping_id=0), timeout=self.START_TIMEOUT)
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 371, in send
+    raise TimeoutError("Request timed out")
+TimeoutError: Request timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 190, in restart
+    await self.start()
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 152, in start
+    await self.stop()
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 178, in stop
+    await self.recv_task
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 311, in recv_worker
+    packet = await self.connection.recv()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\connection\connection.py", line 84, in recv
+    return await self.protocol.recv()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\connection\transport\tcp\tcp_abridged.py", line 47, in recv
+    length = await super().recv(1)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\connection\transport\tcp\tcp.py", line 156, in recv
+    chunk = await asyncio.wait_for(
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python311\Lib\asyncio\tasks.py", line 489, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 711, in read
+    await self._wait_for_data('read')
+  File "C:\Users\asus\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 529, in _wait_for_data
+    raise RuntimeError(
+RuntimeError: read() called while another coroutine is already waiting for incoming data
+[17-Nov-25 06:47:31 PM - ERROR] - default_exception_handler() - Line 1785: asyncio - Task exception was never retrieved
+future: <Task finished name='Task-13974' coro=<Session.restart() done, defined at C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py:188> exception=RuntimeError('read() called while another coroutine is already waiting for incoming data')>
+Traceback (most recent call last):
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 126, in start
+    await self.send(
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 371, in send
+    raise TimeoutError("Request timed out")
+TimeoutError: Request timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 190, in restart
+    await self.start()
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 152, in start
+    await self.stop()
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 178, in stop
+    await self.recv_task
+RuntimeError: read() called while another coroutine is already waiting for incoming data
+[17-Nov-25 06:47:54 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:47:55 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:00 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:00 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:09 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:11 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:15 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:16 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:25 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:26 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:31 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:31 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:40 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:42 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:47 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:47 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:56 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:48:57 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:02 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:02 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:12 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:13 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:18 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:18 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:27 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:28 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:33 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:33 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:43 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:44 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:49 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:49 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:58 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:58 PM - ERROR] - worker() - Line 111: pyrogram.methods.advanced.save_file - Connection lost
+Traceback (most recent call last):
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\methods\advanced\save_file.py", line 109, in worker
+    await session.invoke(data)
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 443, in invoke
+    return await self.invoke(query, retries - 1, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 443, in invoke
+    return await self.invoke(query, retries - 1, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 443, in invoke
+    return await self.invoke(query, retries - 1, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 7 more times]
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 433, in invoke
+    raise e from None
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 360, in send
+    raise e
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 357, in send
+    await self.connection.send(payload)
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\connection\connection.py", line 81, in send
+    await self.protocol.send(data)
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\connection\transport\tcp\tcp_abridged.py", line 39, in send
+    await super().send(
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\connection\transport\tcp\tcp.py", line 149, in send
+    raise OSError(e)
+OSError: Connection lost
+[17-Nov-25 06:49:59 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:49:59 PM - ERROR] - worker() - Line 111: pyrogram.methods.advanced.save_file - Connection lost
+Traceback (most recent call last):
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\methods\advanced\save_file.py", line 109, in worker
+    await session.invoke(data)
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 443, in invoke
+    return await self.invoke(query, retries - 1, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 443, in invoke
+    return await self.invoke(query, retries - 1, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 443, in invoke
+    return await self.invoke(query, retries - 1, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 7 more times]
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 433, in invoke
+    raise e from None
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 360, in send
+    raise e
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 357, in send
+    await self.connection.send(payload)
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\connection\connection.py", line 81, in send
+    await self.protocol.send(data)
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\connection\transport\tcp\tcp_abridged.py", line 39, in send
+    await super().send(
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\connection\transport\tcp\tcp.py", line 149, in send
+    raise OSError(e)
+OSError: Connection lost
+[17-Nov-25 06:50:04 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:50:04 PM - ERROR] - worker() - Line 111: pyrogram.methods.advanced.save_file - Connection lost
+Traceback (most recent call last):
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\methods\advanced\save_file.py", line 109, in worker
+    await session.invoke(data)
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 443, in invoke
+    return await self.invoke(query, retries - 1, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 443, in invoke
+    return await self.invoke(query, retries - 1, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 443, in invoke
+    return await self.invoke(query, retries - 1, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 7 more times]
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 433, in invoke
+    raise e from None
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 360, in send
+    raise e
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 357, in send
+    await self.connection.send(payload)
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\connection\connection.py", line 81, in send
+    await self.protocol.send(data)
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\connection\transport\tcp\tcp_abridged.py", line 39, in send
+    await super().send(
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\connection\transport\tcp\tcp.py", line 149, in send
+    raise OSError(e)
+OSError: Connection lost
+[17-Nov-25 06:50:04 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:50:04 PM - ERROR] - worker() - Line 111: pyrogram.methods.advanced.save_file - Connection lost
+Traceback (most recent call last):
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\methods\advanced\save_file.py", line 109, in worker
+    await session.invoke(data)
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 443, in invoke
+    return await self.invoke(query, retries - 1, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 443, in invoke
+    return await self.invoke(query, retries - 1, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 443, in invoke
+    return await self.invoke(query, retries - 1, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 7 more times]
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 433, in invoke
+    raise e from None
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 360, in send
+    raise e
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\session\session.py", line 357, in send
+    await self.connection.send(payload)
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\connection\connection.py", line 81, in send
+    await self.protocol.send(data)
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\connection\transport\tcp\tcp_abridged.py", line 39, in send
+    await super().send(
+  File "C:\Users\asus\Downloads\uploderclone\venv\Lib\site-packages\pyrogram\connection\transport\tcp\tcp.py", line 149, in send
+    raise OSError(e)
+OSError: Connection lost
+[17-Nov-25 06:50:13 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:50:14 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:50:19 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:50:19 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:50:29 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:50:30 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:50:35 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:50:35 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:50:44 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:50:45 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:50:50 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
+[17-Nov-25 06:50:50 PM - WARNING] - write() - Line 352: asyncio - socket.send() raised exception.
